@@ -1,6 +1,6 @@
 ---
 title: About
-slug: abouto
+slug: about
 toc: false
 ---
 
