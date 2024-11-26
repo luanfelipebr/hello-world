@@ -1,177 +1,53 @@
-# Configuration
-baseURL: "https://example.com/"
-title: "Luan Felipe"
-
-enableRobotsTXT: true
-enableGitInfo: true
-# enableEmoji: false
-hasCJKLanguage: true
-
-# services:
-#   googleAnalytics:
-#     ID: G-MEASUREMENT_ID
-
-outputs:
-  home: [HTML]
-  page: [HTML]
-  section: [HTML, RSS]
-
-defaultContentLanguage: en
-languages:
-  en:
-    languageName: English
-    weight: 1
-    title: Hextra
-  zh-cn:
-    languageName: 简体中文
-    languageCode: zh-CN
-    weight: 2
-    title: Hextra
-  fa:
-    languageName: فارسی
-    languageCode: fa
-    languageDirection: rtl
-    weight: 3
-    title: هگزترا
-
-module:
-  hugoVersion:
-    extended: true
-    min: "0.112.0"
-
-  # workspace: hugo.work
-  # imports:
-  #   - path: github.com/imfing/hextra
-
-theme: hextra
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
-
-enableInlineShortcodes: true
-
-menu:
-  main:
-    - identifier: about
-      name: About
-      pageRef: /about
-      weight: 1
-    - identifier: contato
-      name: Contato
-      pageRef: /sayhello
-      weight: 2
-    - identifier: cv
-      name: Projetos
-      pageRef: /blog
-      weight: 3
-    - identifier: about
-      name: About
-      pageRef: /abouto
-      weight: 4
-    - name: Search
-      weight: 5
-      params:
-        type: search
-    - name: GitHub
-      weight: 6
-      url: "https://github.com/imfing/hextra"
-      params:
-        icon: github
-
-  sidebar:
-    - identifier: more
-      name: More
-      params:
-        type: separator
-      weight: 1
-    - identifier: about
-      name: "About"
-      pageRef: "/about"
-      weight: 2
-    - identifier: hugoDocs
-      name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
-      weight: 3
-
+baseURL: https://raditian-hugo.radity.com/
+languageCode: en-us
+theme: raditian
 params:
-  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
-
-  navbar:
-    displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
-      # width: 40
-      # height: 20
-      # link: /
-    width: wide
-
-  page:
-    # full (100%), wide (90rem), normal (1280px)
-    width: normal
-
-  theme:
-    # light | dark | system
-    default: system
-    displayToggle: true
-
+  plugins:
+    css:
+      - URL: css/main.css
+      - URL: css/rad-icons.css
+      - URL: css/custom.css
+    js:
+      - URL: js/rad-animations.js
+      - URL: js/sticky-header.js
+      - URL: js/library/fontfaceobserver.js
+  sections:
+    - showcase
+    - about
+    - education
+    - experience
+    - client-and-work
+    - testimonial
+    - contact
+    - newsletter
+  googleTagManagerID: GTM-000000
+  logo:
+    text1: Andreas
+    text2: Ellure
   footer:
-    enable: true
-    displayCopyright: true
-    displayPoweredBy: true
-    width: normal
-
-  displayUpdatedDate: true
-  dateFormat: "January 2, 2006"
-
-  # Search
-  # flexsearch is enabled by default
-  search:
-    enable: true
-    type: flexsearch
-
-    flexsearch:
-      # index page by: content | summary | heading | title
-      index: content
-      # full | forward | reverse | strict
-      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
-      tokenize: forward
-
-  editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra/edit/main/exampleSite/content"
-
-  blog:
-    list:
-      displayTags: true
-      # date | lastmod | publishDate | title | weight
-      sortBy: date
-      sortOrder: desc # or "asc"
-
-  highlight:
-    copy:
-      enable: true
-      # hover | always
-      display: hover
-
-  comments:
-    enable: false
-    type: giscus
-
-    # # https://giscus.app/
-    # giscus:
-    #   repo: imfing/hextra
-    #   repoId: R_kgDOJ9fJag
-    #   category: General
-    #   categoryId: DIC_kwDOJ9fJas4CY7gW
-    # mapping: pathname
-    # strict: 0
-    # reactionsEnabled: 1
-    # emitMetadata: 0
-    # inputPosition: top
-    # lang: en
+    copyright: © Raditian. All rights reserved.
+    radity_logo:
+      x: img/general/design-and-code-radity.png
+      _2x: img/general/design-and-code-radity@2x.png
+      alt: Design & Code - Radity
+menu:
+  header:
+    - name: About
+      URL: "#about"
+      weight: 2
+    - name: Portfolio
+      URL: "#portfolio"
+      weight: 3
+    - name: Contact
+      URL: "#contact"
+      weight: 4
+  footer:
+    - name: About
+      URL: "#about"
+      weight: 2
+    - name: Portfolio
+      URL: "#portfolio"
+      weight: 3
+    - name: Contact
+      URL: "#contact"
+      weight: 4
