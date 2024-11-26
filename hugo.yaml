@@ -1,8 +1,7 @@
 baseURL: https://luanfelipebr.github.io/hello-world/
 languageCode: pt-BR
-theme: raditian
+theme: raditian-style
 title: Luan Felipe
-
 
 params:
   plugins:

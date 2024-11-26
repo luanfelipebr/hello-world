@@ -30,7 +30,7 @@ showcase:
 
 # about
 about:
-  enable: true
+  enable: false
   title: "Who am I?"
   content: '<p class="lead">
     I am back, after a few days of vacationing with family. Weather was awesome, the beach was
@@ -52,7 +52,7 @@ about:
 
 # education
 education:
-  enable: true
+  enable: false
   title: "Education"
   items:
     - university: "University of Waterloo"
@@ -65,7 +65,7 @@ education:
 
 # experience
 experience:
-  enable: true
+  enable: false
   title: "Experience"
   description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
   button:
@@ -93,7 +93,7 @@ experience:
 # Client & Work
 client_and_work:
   title: "Clients & Works"
-  enable: true
+  enable: false
 
   clients:
     - logo:
@@ -162,7 +162,7 @@ client_and_work:
 
 # testimonial
 testimonial:
-  enable: true
+  enable: false
   title: "Testimonials"
   items:
     - name: "Daniel Jordan"
@@ -188,7 +188,7 @@ testimonial:
 
 # contact
 contact:
-  enable: true
+  enable: false
   title: "Contact"
   form:
     action: "#"
@@ -210,7 +210,7 @@ contact:
 
 # newsletter
 newsletter:
-  enable: true
+  enable: false
   title: "Newsletter subscription"
   success_message: "Successfully subscribed"
   error_message: "Error while subscribing."
