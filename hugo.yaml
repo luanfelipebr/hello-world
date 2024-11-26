@@ -1,10 +1,13 @@
 baseURL: https://luanfelipebr.github.io/hello-world/
 languageCode: pt-BR
 theme: raditian
+title: Luan Felipe
+
+
 params:
   plugins:
     css:
-      - URL: css/main.css
+      - URL: "css/main.css"
       - URL: css/rad-icons.css
       - URL: css/custom.css
     js:
