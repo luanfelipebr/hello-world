@@ -4,3 +4,6 @@
 [submodule "themes/raditian"]
 	path = themes/raditian
 	url = https://github.com/radity/raditian-free-hugo-theme.git
+[submodule "themes/raditian-style"]
+	path = themes/raditian-style
+	url = https://github.com/luanfelipebr/raditian-style.git
