@@ -1,9 +1,9 @@
 # showcase
 title: "Luan Felipe"
 
-homepage:
-  head:
-    title: "Home | Luan Felipe"
+#homepage:
+#  head:
+#    title: "Home | Luan Felipe"
 
 showcase:
   enable: true
